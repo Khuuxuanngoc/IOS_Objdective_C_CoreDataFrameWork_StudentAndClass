@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasStudent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="inClass" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="studentName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="hasStudent" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="-369.0546875" positionY="-196.453125" width="128" height="73"/>
+        <element name="Student" positionX="-91.640625" positionY="-35.37109375" width="128" height="73"/>
+    </elements>
+</model>
