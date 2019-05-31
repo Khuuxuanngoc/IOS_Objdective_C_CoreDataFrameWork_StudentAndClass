@@ -1,0 +1,2 @@
+# IOS_Objdective_C_CoreDataFrameWork_StudentAndClass
+My first excise
